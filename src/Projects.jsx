@@ -12,10 +12,10 @@ const Projects = () => {
     },
     {
       id: 2,
-      icon: "/assets/PressUpLogo.png",
-      title: "PressUp",
-      subtitle: "Coffee Management System",
-      link: "https://pressup2.au.meteorapp.com/"
+      icon: "/assets/chart.png",
+      title: "NBA Dashboard",
+      subtitle: "Visual stats for any NBA player",
+      link: "https://nbadash.com/"
     },
     {
       id: 3,
