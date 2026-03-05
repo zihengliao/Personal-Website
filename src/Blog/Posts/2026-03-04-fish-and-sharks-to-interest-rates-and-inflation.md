@@ -32,7 +32,8 @@ Well, about 100 years ago an Italian mathematician named Vito Volterra developed
 
 Today we're going to be using these equations to model inflation and interest rates.
 
-<div style="height:40px;"></div>
+
+### Methodology
 
 Let's first make some assumptions for our problem statement.
 
@@ -46,7 +47,9 @@ Let's first make some assumptions for our problem statement.
 
 <div style="height:40px;"></div>
 
-The equations:
+Feel free to skip to the results section.
+
+Here are the equations Volterra proposed (I made some small adjustments):
 
 $$
 \frac{dx}{dt} = ax - \beta xy
@@ -96,7 +99,7 @@ Note that because interest rates are announced 8 times a year in australia, our 
 For inflation:
 
 $$
-\Delta x = \alpha x_t - \beta x_t y_t
+\frac{dx}{dt} = \Delta x = \alpha x_t - \beta x_t y_t
 $$
 
 $$
@@ -110,7 +113,7 @@ $$
 For interest rates:
 
 $$
-\Delta y = \delta x_t y_t - \gamma y \left(1 + \frac{y}{K}\right)
+\frac{dy}{dt} = \Delta y = \delta x_t y_t - \gamma y \left(1 + \frac{y}{K}\right)
 $$
 
 $$
@@ -132,6 +135,8 @@ $\delta = 0.1$,
 $K = 30$
 
 Note, that these hyperparameter values were chosen almost arbitrarily by me when playing around with different hyperparameter values.
+
+### Results
 
 Let's set the interest rates and inflation to be representative of the current Australian situation.
 
