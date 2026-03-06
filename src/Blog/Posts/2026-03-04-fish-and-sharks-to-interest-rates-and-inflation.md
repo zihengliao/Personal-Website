@@ -3,6 +3,37 @@ title: "Simulating Inflation and Interest Rates with Fish and Sharks"
 date: "2026-03-04"
 ---
 
+<title>Simulating Inflation and Interest Rates with the Lotka-Volterra Model</title>
+
+<meta name="description"
+content="A technical exploration of modelling inflation and interest rates using the Lotka-Volterra predator-prey equations with Python simulations."/>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BlogPosting",
+ "headline": "Simulating Inflation and Interest Rates with the Lotka-Volterra Model",
+ "description": "A Python simulation of inflation and interest rate dynamics using predator-prey equations.",
+ "author": {
+   "@type": "Person",
+   "name": "Ziheng Liao"
+ },
+ "datePublished": "2026-03-04",
+ "dateModified": "2026-03-04",
+ "image": "https://www.zihengliao.com/assets/blog/2026-03-04-fish-and-sharks-to-interest-rates-and-inflation/interest_vs_inflation.png",
+ "url": "https://www.zihengliao.com/blog/2026-03-04-fish-and-sharks-to-interest-rates-and-inflation",
+ "mainEntityOfPage": {
+   "@type": "WebPage",
+   "@id": "https://www.zihengliao.com/blog/2026-03-04-fish-and-sharks-to-interest-rates-and-inflation"
+ },
+ "publisher": {
+   "@type": "Person",
+   "name": "Ziheng Liao"
+ }
+}
+</script>
+
+
 ## Simulating Inflation and Interest Rates with Fish and Sharks
 
 Sounds silly right? Hear me out.
