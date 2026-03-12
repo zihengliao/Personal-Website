@@ -38,17 +38,17 @@ This is a plot of every single active NBA player in the 2025-26 season of their 
 
 As we can see, generally players with a strong impact towards the game tend to get paid more.
 
-![Net Rating vs Salary Correlation](/assets/blog/2026-03-12-who-is-overpaid-nba/positive_net_rating_players.png)
+![Net Rating vs Salary. Top Players](/assets/blog/2026-03-12-who-is-overpaid-nba/positive_net_rating_players.png)
 
-We have big name franchise players such as Jokic, Curry and Giannis getting paid the big bucks whilst being solid contributers to their teams.
+We have big name franchise players such as Jokic, Curry and Giannis getting paid the big bucks whilst being solid contributors to their teams.
 
-![Net Rating vs Salary Correlation](/assets/blog/2026-03-12-who-is-overpaid-nba/zach_lavine_salary_net_rating.png)
+![Zach LaVine Graph](/assets/blog/2026-03-12-who-is-overpaid-nba/zach_lavine_salary_net_rating.png)
 
 On the other end of the spectrum we have Zach LaVine getting paid $47,499,660 in the 2025-26 season which makes him a top 10 highest paid player this season over players like SGA and Luka Doncic. Despite this, he is having one of the worst net ratings in the league at -12.6.
 
 Net rating doesn't tell the full story or can be misleading sometimes, so it's necessary to investigate a bit deeper.
 
-![Net Rating vs Salary Correlation](/assets/blog/2026-03-12-who-is-overpaid-nba/zach_lavine_raw_stats.png)
+![Zach LaVine Raw Stats](/assets/blog/2026-03-12-who-is-overpaid-nba/zach_lavine_raw_stats.png)
 
 Despite having relatively good efficiency, Zach LaVine's stats aren't anything extraordinary that gives justice to his salary this season.
 
