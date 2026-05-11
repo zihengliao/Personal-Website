@@ -5,7 +5,7 @@ date: "2026-05-08"
 
 ## Forecasting Electricity Demand Using Regression Pt.3
 
-I can't believe there is a part 3 to this as well and from how things are looking, there is likely going to be a part 4 as well.
+I can't believe there is a part 3 to this as well and from how things are looking, there may be a part 4 as well.
 
 Last article I was trying to forecast peak electricity demand in December, but I've adjusted the problem I'm trying to solve since.
 
@@ -64,10 +64,49 @@ So, although our model is good, it's not that much better.
 
 Let's try addressing that multicollinearity issue we mentioned earlier.
 
-Multicollinearity is
+Multicollinearity is when your independent variables are correlated. For example because of the close proximity between Geelong and Melbourne, chances are, the temperature between these 2 locations are very closely correlated.
 
-### Conclusion maybe?
+![Linear Regression](/assets/blog/2026-05-08-forecasting-electricity-demand-regression-3/temp_melb_vs_temp_geelong.png)
 
-Looking back, the question I'm trying to answer might not actually be useful. For AEMO, demand in the next 5 minutes will be very similar to the previous 5 minutes. What they care about would probably be peak demand during the day or forecasting energy demand for the next 24 hours on a 5 minute basis.
+We can see that these 2 variables are strongly correlated.
 
-This specific model would not be the best for that as each 5 minutes passes, the forecast error will compound. 
+So why is this a problem?
+
+The main problem is interpretability. Coefficients in the model become unstable.
+
+If we look at the coefficients from the first model we fitted with all the variables, we can see that the coefficients for temperature don't really make sense.
+
+- Temperature Melbourne: 0.52
+- Temperature Shepparton: -0.25
+
+The way we can interpret these coefficients is that as temperature increases across Melbourne, we can expect energy demand to increase, but for Shepparton, it wil decrease. 
+
+Another thing is that because there is more than one variable trying to capture this information, its p-value may look statistically insignificant. 
+
+One thing to note is that multicollinearity doesn't necessary mean that prediction performance will be worse off. It just means your model might not make the most sense.
+
+<br>
+
+Knowing this, let's remove multicollinearity in our model.
+
+<csvtable src="/assets/blog/2026-05-08-forecasting-electricity-demand-regression-3/removed_variables.csv" ></csvtable>
+
+<csvtable src="/assets/blog/2026-05-08-forecasting-electricity-demand-regression-3/non_multicollinearity_regression_summary.csv" ></csvtable>
+
+Using the same training and testing dataset to train and test our model, we find that the results are basically the exact same despite removing about 65 "independent" variables.
+
+- MAE: 41.332MW
+- RMSE: 55.399MW
+- MAPE: 0.908%
+
+Surprisingly or non surprisingly, the results after removing all these variables produces no better or no worse results than including them. 
+
+Despite being statistical significant with their p-values, it seems those variables are redundant and don't provide much value.
+
+### Conclusion
+
+The goal with this was to build a real time forecast system that balances interpretability and performance.
+
+There is an infinite amount of techniques and ideas to be applied to improve performance, including even trying different models.
+
+Looking back, the question I'm trying to answer might not even actually be useful. For AEMO or energy retailers, demand in the next 5 minutes will be very similar to the previous 5 minutes. What they care about would probably be peak demand during the day or forecasting energy demand for the next 24 hours on a 5 minute basis.
