@@ -52,7 +52,7 @@ MAPE is Mean Absolute Percentage Error
 
 Being only wrong on average by a margin of 0.91% isn't too bad, but given the fact that we know what what our demand was 5 minutes ago doesn't actually make it that impressive.
 
-Just for comparison, if I were to use the demand data from 5 minutes ago and predict that 5 minutes later, demand would be the same. I would only be wrong by about:
+Just for comparison, if I were to use the demand data from 5 minutes ago and predict that 5 minutes later demand would be the same, I would only be off by about:
 
 - MAE: 48.330MW
 - RMSE: 63.036MW
