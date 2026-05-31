@@ -44,8 +44,12 @@ Here are some clips of people talking about the impact of that one play.
 
 [Spurs coach Mitch Johnson on Kornet's block](https://youtu.be/usFMbW5mDsU?si=9k_USTKIUNBmy7Jy&t=260)
 
-There will most likely be analysts talking about this play in the near future as well, but looking at the comments discussing this, everybody just knew intuitively the impact it had.
+There will most likely be analysts talking about this play in the near future as well, but looking at the comments online discussing this, everybody just knew intuitively the impact it had.
 
-It's almost like the morale of an entire army just shifting. You can just feel it but words can't describe it.
+![Kornet comments online pt.1](/assets/blog/2026-05-31-the-intangibles-of-data/kornet_comments1.jpeg)
+
+![Kornet comments online pt.2](/assets/blog/2026-05-31-the-intangibles-of-data/kornet_comments2.jpeg)
+
+It's almost like the morale of an entire army just shifting in real time. You can just feel it but words can't describe it.
 
 GO SPURS GO!
